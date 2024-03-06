@@ -16,6 +16,7 @@ In this project, we utilized the uArm Swift Pro robotic arm to accomplish the gr
 * Arduino Uno
 * Logitech C270 Webcam * 2
 * L298N
+* HC-SR04 * 3
 * DC3V-6V Reduction Motor * 2
 * TCR5000 * 2
 * SG90 Servo Motor (used for gate control) * 2
