@@ -38,6 +38,8 @@ Within this process, two Raspberry Pis are primarily responsible for detecting t
 
 ![Raspberry_Pi_Wiring_Diagram](image/Raspberry_Pi_Wiring_Diagram.PNG)
 
-The final component is the AGV, where we utilize the Arduino Uno to assemble our Automated Guided Vehicle (AGV). Below is its wiring diagram
+The final component is the AGV, where we utilize the Arduino Uno to assemble our Automated Guided Vehicle (AGV). Below is its wiring diagram:
+
+![AGV_Wiring_Diagram.PNG](image/AGV_Wiring_Diagram.PNG.PNG)
 
 
