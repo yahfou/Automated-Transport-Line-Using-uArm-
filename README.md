@@ -36,4 +36,4 @@ The workflow of this project is as follows:
 
 Within this process, two Raspberry Pis are primarily responsible for detecting the proximity of the AGV, controlling the raising and lowering of gates, and managing the robotic arms in the loading and unloading areas. The wiring diagram is provided below, where both the robotic arms and cameras are connected to the USB ports of the Raspberry Pis. For detailed circuit explanations, please refer to the senior project documentation.
 
-![Raspberry_Pi_Wiring_Diagram](image/Raspberry_Pi_Wiring_Diagram.png)
+![Raspberry_Pi_Wiring_Diagram](image/Raspberry_Pi_Wiring_Diagram.PNG)
