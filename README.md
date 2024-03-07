@@ -34,7 +34,7 @@ The workflow of this project is as follows:
 4. Unloading area gate detects AGV and lowers the gate to stop the AGV.
 5. Image recognition identifies items on the AGV platform. The robotic arm picks up the goods and unloads them in the unloading area, raising the gate for AGV to move forward.
 
-Within this process, two Raspberry Pis are primarily responsible for detecting the proximity of the AGV, controlling the raising and lowering of gates, and managing the robotic arms in the loading and unloading areas. The wiring diagram is provided below, where both the robotic arms and cameras are connected to the USB ports of the Raspberry Pis. For detailed circuit explanations, please refer to the senior project documentation.
+Within this process, two Raspberry Pis are primarily responsible for detecting the proximity of the AGV, controlling the raising and lowering of gates, and managing the robotic arms in the loading and unloading areas. The wiring diagram is provided below, where both the robotic arms and cameras are connected to the USB ports of the Raspberry Pis. For detailed circuit explanations, please refer to the senior project documentation(P.37).
 
 ![Raspberry_Pi_Wiring_Diagram](image/Raspberry_Pi_Wiring_Diagram.PNG)
 
@@ -42,4 +42,4 @@ The final component is the AGV, where we utilize the Arduino Uno to assemble our
 
 ![AGV_Wiring_Diagram](image/AGV_Wiring_Diagram.PNG)
 ## Usage
-You can decide the layout settings for the loading and unloading areas on your own. Through `Loading_cargo.py` and `Unloading_cargo.py`, you can refer to the comments inside and modify the coordinates of the robotic arm. We calculate the difference between the coordinates of the robotic arm and the camera by subtraction. You can refer to the senior project documentation for details on how to calculate the coordinates. Additionally, when using these two scripts, please place them within the uArm-Python-SDK environment.
+You can decide the layout settings for the loading and unloading areas on your own. Through `Loading_cargo.py` and `Unloading_cargo.py`, you can refer to the comments inside and modify the coordinates of the robotic arm. We calculate the difference between the coordinates of the robotic arm and the camera by subtraction. You can refer to the senior project documentation(P.33) for details on how to calculate the coordinates. Additionally, when using these two scripts, please place them within the uArm-Python-SDK environment.
