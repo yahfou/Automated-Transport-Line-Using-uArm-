@@ -136,11 +136,11 @@ while True:
         for contours1 in range(len(find_contours)): # i:第幾個物體 # contours1:第幾個輪廓
             
             speed = 9e7   # x=110~260, y=300(左)~-300(右), z=20~170
-            swift.set_position(y = cy * -0.260245 + 86, speed = 9e7) # 移動到物體Y
+            swift.set_position(y = cy * -0.260245 + 86, speed = 9e7) # 移動到物體Y,可自行更改座標差異值
             time.sleep(3)
             swift.set_position(z = 10, speed = 9e7) # 下降物體到一半高
             time.sleep(3)
-            swift.set_position(x = cx * 0.2022 + 163, speed = 9e7) # 移動到物體X
+            swift.set_position(x = cx * 0.2022 + 163, speed = 9e7) # 移動到物體X,可自行更改座標差異值
             time.sleep(3)
     
             print(swift.set_gripper(catch = True)) # 移動到物體中心點  # 物體夾取 # TIMEOUT:中心點不在輪廓內
