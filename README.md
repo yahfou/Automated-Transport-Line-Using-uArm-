@@ -23,3 +23,13 @@ In this project, we utilized the uArm Swift Pro robotic arm to accomplish the gr
 
 The rest of the miscellaneous details can be found in the attached document.
 ## Descriptions
+
+The workflow of this project is as follows:
+
+![imageprocess](image/imageprocess.png)
+
+1. AGV starts and moves forward after confirming no obstacles ahead.
+2. Loading area gate detects AGV and lowers the gate to stop the AGV.
+3. Image recognition identifies items in the loading area. The robotic arm loads goods onto the AGV and raises the gate for AGV to proceed.
+4. Unloading area gate detects AGV and lowers the gate to stop the AGV.
+5. Image recognition identifies items on the AGV platform. The robotic arm picks up the goods and unloads them in the unloading area, raising the gate for AGV to move forward.
