@@ -1,7 +1,7 @@
 # Automated Transport Line (Using uArm)
 Welcome to my senior project. This marks my first attempt at using image processing for task execution. While relatively simple, it should be sufficient for the task environment. :)
 ## Introduction
-In this project, we utilized the uArm Swift Pro robotic arm to accomplish the gripping of various-shaped building blocks. Subsequently, we employed an Arduino Uno-controlled autonomous transport vehicle to transport the building blocks to another robotic arm for unloading. Throughout this process, a Raspberry Pi was employed for image recognition and control of the robotic arm's gripping actions. Additionally, we controlled a gate to ensure the transport vehicle could stop at the unloading point.
+In this project, we utilized the uArm Swift Pro robotic arm to accomplish the gripping of various-shaped building blocks. Subsequently, we employed an Arduino Uno-controlled autonomous transport vehicle to transport the building blocks to another robotic arm for unloading. Throughout this process, a Raspberry Pi was employed for image recognition and control of the robotic arm's gripping actions. Additionally, we controlled a gate to ensure the transport vehicle could stop at the unloading point.  [video link](https://www.youtube.com/watch?v=BXoDqY-PUAk)
 ## Requirements
 ### Software
 * opencv-python 3.4.6
