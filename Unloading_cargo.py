@@ -97,10 +97,10 @@ while True:
             cx = int(M["m10"] / M["m00"])
             cy = int(M["m01"] / M["m00"])
 
-            x, y, w, h = cv2.boundingRect(contours2) # 將輪廓分解為識別物件的左上角座標和寬、高
+            x, y, w, h = cv2.boundingRect(contours2)    # 將輪廓分解為識別物件的左上角座標和寬、高
             cv2.circle(image_contours, (cx, cy), 3, (0, 255, 0), -1)
-            cv2.putText(image, str(p), (x - 10, y + 10), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 0, 0), 2) # 給識別物件寫上標號 # 加減 10 是調整字元位置
-            cv2.putText(image, str(shape_type), (x + 20, y + 10), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 0, 0), 2) # 給識別物件寫上 shape_type # 加減10是調整字元位置
+            cv2.putText(image, str(p), (x - 10, y + 10), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 0, 0), 2)    # 給識別物件寫上標號 # 加減 10 是調整字元位置
+            cv2.putText(image, str(shape_type), (x + 20, y + 10), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 0, 0), 2)    # 給識別物件寫上 shape_type # 加減10是調整字元位置
             p += 1
             print("形狀: %s, 鏡頭內中心座標: (%d px , %d px), 絕對座標: (%d , %d)"% 
                  (shape_type, cx, cy, round(cy * 0.25363 + 135, 3), round(cx * 0.25455 - 67, 3)))
@@ -114,7 +114,7 @@ while True:
              swift.set_position(z = 20, speed = 9e7)
              time.sleep(3)
 
-             print(swift.set_gripper(catch = False)) # 夾子打開
+             print(swift.set_gripper(catch = False))    # 夾子打開
              time.sleep(3) 
 
              swift.set_position(x = 170, speed = 9e7)
@@ -139,9 +139,9 @@ while True:
         cx = [int(M["m10"] / M["m00"]) for M in A]
         cy = [int(M["m01"] / M["m00"]) for M in A]
         
-        for contours1 in range(len(find_contours)): # i:第幾個物體 # contours1:第幾個輪廓
+        for contours1 in range(len(find_contours)):    # i:第幾個物體 # contours1:第幾個輪廓
             
-            speed = 9e7   # x=110~260, y=300(左)~-300(右), z=20~170
+            speed = 9e7    # x=110~260, y=300(左)~-300(右), z=20~170
             swift.set_position(y = 50, speed = 9e7)
             time.sleep(3)
             swift.set_position(x = 180, speed = 9e7)
@@ -152,10 +152,10 @@ while True:
             time.sleep(3)
  
            
-            swift.set_position(y = cy * -0.20066 + (-60), speed = 9e7) 移動到物體Y,可自行更改座標差異值
+            swift.set_position(y = cy * -0.20066 + (-60), speed = 9e7)    # 移動到物體Y,可自行更改座標差異值
             time.sleep(3)
             
-            swift.set_position(x = 250 - cx * 0.2083, speed = 9e7) 移動到物體X,可自行更改座標差異值
+            swift.set_position(x = 250 - cx * 0.2083, speed = 9e7)    # 移動到物體X,可自行更改座標差異值
             time.sleep(3)
             
             swift.set_position(z = 140, speed = 9e7)
