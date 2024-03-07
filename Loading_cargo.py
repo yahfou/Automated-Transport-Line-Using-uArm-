@@ -61,7 +61,7 @@ while True:
         cv2.destroyWindow("capture")
    
         image = cv2.imread("image.jpg")
-        white_board = cv2.imread("white_board.jpg")
+        white_board = cv2.imread("white_board.jpg")    # 去背景用圖片，可自行更換
         diff = cv2.absdiff(white_board, image)
         gray = cv2.cvtColor(diff, cv2.COLOR_BGR2GRAY)
         ret, th1 = cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
