@@ -26,7 +26,7 @@ The rest of the miscellaneous details can be found in the attached document.
 
 The workflow of this project is as follows:
 
-![imageprocess](image/imageprocess.png)
+![Overview_Diagram](image/Overview_Diagram.png)
 
 1. AGV starts and moves forward after confirming no obstacles ahead.
 2. Loading area gate detects AGV and lowers the gate to stop the AGV.
