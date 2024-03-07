@@ -33,3 +33,7 @@ The workflow of this project is as follows:
 3. Image recognition identifies items in the loading area. The robotic arm loads goods onto the AGV and raises the gate for AGV to proceed.
 4. Unloading area gate detects AGV and lowers the gate to stop the AGV.
 5. Image recognition identifies items on the AGV platform. The robotic arm picks up the goods and unloads them in the unloading area, raising the gate for AGV to move forward.
+
+Within this process, two Raspberry Pis are primarily responsible for detecting the proximity of the AGV, controlling the raising and lowering of gates, and managing the robotic arms in the loading and unloading areas. The wiring diagram is provided below, where both the robotic arms and cameras are connected to the USB ports of the Raspberry Pis. For detailed circuit explanations, please refer to the senior project documentation.
+
+
