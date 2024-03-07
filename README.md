@@ -42,4 +42,4 @@ The final component is the AGV, where we utilize the Arduino Uno to assemble our
 
 ![AGV_Wiring_Diagram](image/AGV_Wiring_Diagram.PNG)
 ## Usage
-
+You can decide the layout settings for the loading and unloading areas on your own. Through Loading_cargo.py and Unloading_cargo.py, you can refer to the comments inside and modify the coordinates of the robotic arm. We calculate the difference between the coordinates of the robotic arm and the camera by subtraction. You can refer to the senior project documentation for details on how to calculate the coordinates.
