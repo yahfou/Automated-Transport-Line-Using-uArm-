@@ -152,10 +152,10 @@ while True:
             time.sleep(3)
  
            
-            swift.set_position(y = cy * -0.20066 + (-60), speed = 9e7) 
+            swift.set_position(y = cy * -0.20066 + (-60), speed = 9e7) 移動到物體Y,可自行更改座標差異值
             time.sleep(3)
             
-            swift.set_position(x = 250 - cx * 0.2083, speed = 9e7) 
+            swift.set_position(x = 250 - cx * 0.2083, speed = 9e7) 移動到物體X,可自行更改座標差異值
             time.sleep(3)
             
             swift.set_position(z = 140, speed = 9e7)
